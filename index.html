@@ -1,18 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Terry Tate Train</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
+
 <body>
-    
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
-    <link rel="text/javascript" href="assets/javascript/javascript.js">
+    <div class="container">
+        <div id="row">
+            <div id="col-sm-8 offset-sm-2">
+                <div class="jumbotron text-center rounded">
+                    <div class="container">
+                        <h1 class="display-4">Terry Tate: Train Schedule</h1>
+                        <p class="lead">PAIN TRAIN COMING! WOO WOO! WOO WOO!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="row">
+            <div id="col-sm-8 offset-sm-2">
+                <div class="card">
+                    <div class="card-header">
+                        Current Train Schedule
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Frequency (min)</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody id="train-table">
+
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+            <div id="row">
+                <div id="col-sm-8 offset-sm-2">
+                    <div class="card">
+                        <div class="card-header">
+                            Add Train
+                        </div>
+                        <div class="card-body">
+                            <form>
+
+                                <div class="form-group">
+                                    <label for="nameOfTrain">Train Name</label>
+                                    <input type="text" class="form-control" id="nameOfTrain" placeholder="Terry Tate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="destination">Destination</label>
+                                    <input type="text" class="form-control" id="destination" placeholder="Office Linebacker">
+                                </div>
+                                <div class="form-group">
+                                    <label for="trainTime">First Train Time (HH:MM Military Time)</label>
+                                    <input type="text" class="form-control" id="trainTime" placeholder="09:40">
+                                </div>
+                                <div class="form-group">
+                                    <label for="frequency">Frequency (min)</label>
+                                    <input type="text" class="form-control" id="frequency" placeholder="30">
+                                </div>
+                                <button type="submit" class="btn btn-primary float-right" id="add-train">Submit</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/moment@2.23.0/moment.min.js"></script>
+                <script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+                <script src="assets/javascript/javascript.js"></script>
 </body>
+
 </html>
