@@ -1,0 +1,26 @@
+body {
+    background: url("../images/prism.png");
+}
+
+.jumbotron {
+    background: #7c1f18;
+    color: #ffffff;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.card-header {
+    background: #7c1f18;
+    color: #ffffff;
+}
+
+.card {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.btn {
+    background-color: #7c1f18;
+    border: none;
+}

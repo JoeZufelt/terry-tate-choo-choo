@@ -14,13 +14,6 @@ var config = {
  console.log(database);
  
  $(document).ready(function(){
-
-    // var newUser = {
-    //     newName: "",
-    //     newDestination: "",
-    //     newTime: "",
-    //     newFrequency: "",
-    // }
  
  $("#add-train").on("click", function(event){
  
@@ -40,17 +33,6 @@ var config = {
      $("#destination").val("");
      $("#trainTime").val("");
      $("#frequency").val("");
- 
-    
-    // var trainTimeConverted = moment(newUser.newTime, "hh:mm").subtract(1, "years");
-    // var diffTime = moment().diff(moment(trainTimeConverted), "minutes");
-    // var tRemainder = diffTime % newUser.newFrequency;
-    // var tMinutesTillTrain = newUser.newFrequency - tRemainder;
-    // var nextTrain = moment().add(tMinutesTillTrain, "minutes");
-    // var nextTrainConverted = moment(nextTrain).format("hh:mm");
-    // var newRow = $("<tr>");
-    // newRow.append("<td>"+ newUser.newName + "</td>").append("<td>"+ newUser.newDestination + "</td>").append("<td>" + newUser.newFrequency + "</td>").append("<td>"+ nextTrainConverted + "</td>").append("<td>"+ tMinutesTillTrain + "</td>");
-    // $("#train-table").append(newRow);
  
  });
 
